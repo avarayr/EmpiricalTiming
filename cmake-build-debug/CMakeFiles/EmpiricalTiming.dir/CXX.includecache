@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mika/CLionProjects/EmpiricalTiming/ArrayDriver.cpp
+memory
+-
+SortedArrayList.hpp
+/Users/mika/CLionProjects/EmpiricalTiming/SortedArrayList.hpp
+chrono
+-
+
+/Users/mika/CLionProjects/EmpiricalTiming/SortedArrayList.hpp
+memory
+-
+functional
+-
+algorithm
+-
+
