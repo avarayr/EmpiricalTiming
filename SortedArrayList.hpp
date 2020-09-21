@@ -17,8 +17,17 @@ private:
     int _capacity = ORIGINAL_CAPACITY;
     int _size = 0;
 
+    /**
+     * Resizes the data to the desired capacity
+     * @param newCapacity
+     */
     void resize(int newCapacity);
 
+    /**
+     * Inserts an element at a specific position
+     * @param index
+     * @param item
+     */
     void insertAt(int index, T item);
 
 

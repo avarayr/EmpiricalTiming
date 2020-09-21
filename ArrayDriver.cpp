@@ -5,16 +5,30 @@
 using namespace std;
 float startTime = 0;
 
-void printSeparator();
+/**
+ * Prints a separator
+ */
+void printSeparator() {
+    printf("%s\n", "———————————————————");
+}
 
+/**
+ * Starts the timer
+ */
 void tick() {
     startTime = clock();
 }
 
+/*
+ * Stops the timer
+ */
 float tock() {
     return clock() - startTime;
 }
 
+/**
+ * Tests adding to the list in numerically
+ */
 void testAddInOrder() {
     printSeparator();
 
@@ -41,10 +55,9 @@ void testAddInOrder() {
     printSeparator();
 }
 
-void printSeparator() {
-    printf("%s\n", "———————————————————");
-}
-
+/*
+ * Tests adding to the list in reverse numerical order
+ */
 void testAddReverseOrder() {
 
     int testSizes[] = {100, 200, 400, 800, 1600};
@@ -70,6 +83,9 @@ void testAddReverseOrder() {
     printSeparator();
 }
 
+/**
+ * Test removing elements from the list until it's empty
+ */
 void testRemoveUntilEmpty() {
 
     int testSizes[] = {100, 200, 400, 800, 1600};
@@ -100,6 +116,9 @@ void testRemoveUntilEmpty() {
     printSeparator();
 }
 
+/**
+ * Tests clearing the list
+ */
 void testClear() {
 
     int testSizes[] = {100, 200, 400, 800, 1600};
